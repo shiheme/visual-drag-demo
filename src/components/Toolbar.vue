@@ -189,6 +189,7 @@ export default {
                 const fileResult = res.target.result
                 const img = new Image()
                 img.onload = () => {
+                    console.log('fileResult', fileResult)
                     const component = {
                         ...commonAttr,
                         id: generateID(),
